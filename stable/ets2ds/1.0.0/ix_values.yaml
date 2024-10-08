@@ -24,10 +24,10 @@ service:
         port: 27015
         protocol: tcp
         targetPort: 27015
-  gameport:
+  udpgameport:
     enabled: true
     ports:
-      gameport:
+      udpgameport:
         enabled: true
         port: 27015
         protocol: udp
