@@ -29,9 +29,9 @@ service:
     ports:
       udpgameport:
         enabled: true
-        port: 27015
+        port: 27016
         protocol: udp
-        targetPort: 27015
+        targetPort: 27016
 workload:
   main:
     podSpec:
