@@ -22,15 +22,15 @@ service:
     ports:
       main:
         port: 27015
-        protocol: tcp/udp
+        protocol: tcp
         targetPort: 27015
-  udpgameport:
+  gameport:
     enabled: true
     ports:
-      udpgameport:
+      gameport:
         enabled: true
         port: 27016
-        protocol: tcp/udp
+        protocol: tcp
         targetPort: 27016
 workload:
   main:
