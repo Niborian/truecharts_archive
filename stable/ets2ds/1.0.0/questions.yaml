@@ -405,7 +405,7 @@ questions:
                             description: "This port exposes the container port on the service"
                             schema:
                               type: int
-                              default: 27015
+                              default: 27016
                               required: true
         - variable: gameport
           label: 'gameport service'
