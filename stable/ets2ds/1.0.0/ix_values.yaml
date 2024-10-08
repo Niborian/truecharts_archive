@@ -39,7 +39,7 @@ service:
   udpquery:
     enabled: true
     ports:
-      rcon:
+      udpquery:
         enabled: true
         protocol: tcp
         port: 27016

@@ -527,6 +527,26 @@
                                                                 }
                                                             ]
                                                         }
+                                                    },
+                                                    {
+                                                        "variable": "game",
+                                                        "label": "Game Service Port Configuration (Main Port + 1)",
+                                                        "schema": {
+                                                            "additional_attrs": true,
+                                                            "type": "dict",
+                                                            "attrs": [
+                                                                {
+                                                                    "variable": "port",
+                                                                    "label": "Port",
+                                                                    "description": "This port exposes the container port on the service",
+                                                                    "schema": {
+                                                                        "type": "int",
+                                                                        "default": 27015,
+                                                                        "required": true
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
                                                     }
                                                 ]
                                             }
@@ -535,9 +555,9 @@
                                 }
                             },
                             {
-                                "variable": "udpgameport",
-                                "label": "udpgameport service",
-                                "description": "UDP Game Port (if you need another port, please delete this entry and create a new UDP Port with the required port number, also dont forget to change your server settings file)",
+                                "variable": "query",
+                                "label": "Query service",
+                                "description": "Query Service Port Configuration",
                                 "schema": {
                                     "additional_attrs": true,
                                     "type": "dict",
@@ -594,8 +614,93 @@
                                                 "type": "dict",
                                                 "attrs": [
                                                     {
-                                                        "variable": "udpgameport",
-                                                        "label": "udpgameport Service Port Configuration",
+                                                        "variable": "query",
+                                                        "label": "Query Service Port Configuration",
+                                                        "schema": {
+                                                            "additional_attrs": true,
+                                                            "type": "dict",
+                                                            "attrs": [
+                                                                {
+                                                                    "variable": "port",
+                                                                    "label": "Port",
+                                                                    "description": "This port exposes the container port on the service",
+                                                                    "schema": {
+                                                                        "type": "int",
+                                                                        "default": 27016,
+                                                                        "required": true
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "variable": "udpquery",
+                                "label": "udpquery service",
+                                "description": "udpquery Service Port Configuration",
+                                "schema": {
+                                    "additional_attrs": true,
+                                    "type": "dict",
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "Enable the Service",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "type",
+                                            "label": "Service Type",
+                                            "description": "ClusterIP's are only internally available and Loadbalancer exposes the service using the system loadbalancer",
+                                            "schema": {
+                                                "type": "string",
+                                                "default": "LoadBalancer",
+                                                "enum": [
+                                                    {
+                                                        "value": "LoadBalancer",
+                                                        "description": "LoadBalancer (Expose Ports)"
+                                                    },
+                                                    {
+                                                        "value": "ClusterIP",
+                                                        "description": "ClusterIP (Do Not Expose Ports)"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "loadBalancerIP",
+                                            "label": "LoadBalancer IP",
+                                            "description": "MetalLB Only: Selects the Loadbalancer IP to expose on. Required when using PortalButton with MetalLB",
+                                            "schema": {
+                                                "show_if": [
+                                                    [
+                                                        "type",
+                                                        "=",
+                                                        "LoadBalancer"
+                                                    ]
+                                                ],
+                                                "type": "string",
+                                                "default": ""
+                                            }
+                                        },
+                                        {
+                                            "variable": "ports",
+                                            "label": "Service's Port(s) Configuration",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "udpquery",
+                                                        "label": "udpquery Service Port Configuration",
                                                         "schema": {
                                                             "additional_attrs": true,
                                                             "type": "dict",
