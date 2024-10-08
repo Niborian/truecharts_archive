@@ -19,19 +19,30 @@ securityContext:
     runAsUser: 0
 service:
   main:
-    ports:
-      main:
-        port: 27015
-        protocol: tcp
-        targetPort: 27015
-  udpgameport:
     enabled: true
     ports:
-      udpgameport:
+      main:
         enabled: true
-        port: 27016
+        port: 27015
         protocol: udp
-        targetPort: 27016
+      game:
+        enabled: true
+        port: 27015
+        protocol: tcp
+  query:
+    enabled: true
+    ports:
+      query:
+        enabled: true
+        protocol: udp
+        port: 27016
+  udpquery:
+    enabled: true
+    ports:
+      rcon:
+        enabled: true
+        protocol: tcp
+        port: 27016
 workload:
   main:
     podSpec:
