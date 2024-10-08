@@ -24,11 +24,11 @@ service:
       main:
         enabled: true
         port: 27015
-        protocol: udp
+        protocol: tcp
       game:
         enabled: true
         port: 27015
-        protocol: tcp
+        protocol: udp
   query:
     enabled: true
     ports:
