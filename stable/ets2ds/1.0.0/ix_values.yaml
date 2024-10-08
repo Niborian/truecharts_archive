@@ -23,11 +23,11 @@ service:
     ports:
       main:
         enabled: true
-        port: 27015
+        port: 27017
         protocol: tcp
       game:
         enabled: true
-        port: 27015
+        port: 27017
         protocol: udp
   query:
     enabled: true
@@ -35,14 +35,14 @@ service:
       query:
         enabled: true
         protocol: udp
-        port: 27016
+        port: 27018
   udpquery:
     enabled: true
     ports:
       udpquery:
         enabled: true
         protocol: tcp
-        port: 27016
+        port: 27018
 workload:
   main:
     podSpec:

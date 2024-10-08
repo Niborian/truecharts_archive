@@ -405,7 +405,7 @@ questions:
                             description: This port exposes the container port on the service
                             schema:
                               type: int
-                              default: 27015
+                              default: 27017
                               required: true
                     - variable: game
                       label: Game Service Port Configuration (Main Port + 1)
@@ -418,7 +418,7 @@ questions:
                             description: This port exposes the container port on the service
                             schema:
                               type: int
-                              default: 27015
+                              default: 27017
                               required: true
         - variable: query
           label: Query service
@@ -470,7 +470,7 @@ questions:
                             description: This port exposes the container port on the service
                             schema:
                               type: int
-                              default: 27016
+                              default: 27018
                               required: true
         - variable: rcon
           label: Rcon service
@@ -522,7 +522,7 @@ questions:
                             description: This port exposes the container port on the service
                             schema:
                               type: int
-                              default: 27016
+                              default: 27018
                               required: true
   - variable: scaleExternalInterface
     description: 'Add External Interfaces (Experimental, might change or be removed without further notice)'

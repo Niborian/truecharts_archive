@@ -521,7 +521,7 @@
                                                                     "description": "This port exposes the container port on the service",
                                                                     "schema": {
                                                                         "type": "int",
-                                                                        "default": 27015,
+                                                                        "default": 27017,
                                                                         "required": true
                                                                     }
                                                                 }
@@ -530,7 +530,7 @@
                                                     },
                                                     {
                                                         "variable": "game",
-                                                        "label": "Game Service Port Configuration (Main Port + 1)",
+                                                        "label": "Game Service Port Configuration",
                                                         "schema": {
                                                             "additional_attrs": true,
                                                             "type": "dict",
@@ -541,7 +541,7 @@
                                                                     "description": "This port exposes the container port on the service",
                                                                     "schema": {
                                                                         "type": "int",
-                                                                        "default": 27015,
+                                                                        "default": 27017,
                                                                         "required": true
                                                                     }
                                                                 }
@@ -626,7 +626,7 @@
                                                                     "description": "This port exposes the container port on the service",
                                                                     "schema": {
                                                                         "type": "int",
-                                                                        "default": 27016,
+                                                                        "default": 27018,
                                                                         "required": true
                                                                     }
                                                                 }
@@ -711,7 +711,7 @@
                                                                     "description": "This port exposes the container port on the service",
                                                                     "schema": {
                                                                         "type": "int",
-                                                                        "default": 27016,
+                                                                        "default": 27018,
                                                                         "required": true
                                                                     }
                                                                 }
