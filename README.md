@@ -30,41 +30,42 @@ Now you should be able to update your applications again.
 - ### I currently manually push updates for these applications:
     
     - **premium train:**
-        - authelia: v4.38.12 *(Updated: 2024.09.24)*
+        - authelia: v4.38.16 *(Updated: 2024.10.08)*
 		- grafana: v11.2.0 *(Updated: 2024.09.18)* ***(Requested)***
         - nextcloud: v30.0.0 *(Updated: 2024.09.20)*
 		- prometheus: v2.54.1 *(Updated: 2024.09.18)* ***(Requested)***
-        - traefik: v3.1.4 *(Updated: 2024.09.20)*
+        - traefik: v3.1.5 *(Updated: 2024.10.03)*
+
     - **stable train**
         - anything-llm: latest *(Updated: 2024.09.03)*
-        - audiobookshelf: v2.13.4 *(Updated: 2024.09.16)*
-        - autobrr: v1.46.1  *(Updated: 2024.09.16)*
-		- bazarr: v1.4.4 *(Updated: 2024.09.16)*
-		- changedetection.io: v0.46.04 *(Updated: 2024.09.05)*
+        - audiobookshelf: v2.15.0 ***(Updated: 2024.10.13)***
+        - autobrr: v1.47.1  *(Updated: 2024.10.08)*
+		- bazarr: v1.4.5 *(Updated: 2024.10.03)*
+		- changedetection.io: v0.47.03 ***(Updated: 2024.10.13)***
 		- cloudflared: v2024.8.3 *(Updated: 2024.08.26)*
-        - code-server: v4.93.1 ***(Updated: 2024.10.03)***
-		- codeproject-ai-server: v2.6.5 ***(Updated: 2024.10.03)***
-		- crafty-4: v4.4.3 *(Updated: 2024.08.09)*
+        - code-server: v4.93.1 *(Updated: 2024.10.03)*
+		- codeproject-ai-server: v2.6.5 *(Updated: 2024.10.03)*
+		- crafty-4: v4.4.4 *(Updated: 2024.10.03)*
 		- factorio: stable *(Updated: 2024.09.18)*
         - flaresolverr: pr-1300-experimental *(Updated: 2024.09.03)*
 		- gamevault-backend: v12.2.0 *(Updated: 2024.08.06)*
-        - immich: v1.115.0 *(Updated: 2024.09.16)*
+        - immich: v1.117.0 *(Updated: 2024.10.03)*
         - jellyfin: v10.9.11  *(Updated: 2024.09.16)*
         - jellystat: v1.1.0 *(Updated: 2024.07.24)*
-        - Lidarr: v2.5.2.4316 *(Updated: 2024.08.26)*
-		- local-ai: v2.20.1 ***(Updated: 2024.10.03)***
+        - lidarr: v2.6.4.4402 ***(Updated: 2024.10.10)***
+		- local-ai: v2.22.0 ***(Updated: 2024.10.13)***
 		- maintainerr: v2.1.2 *(Updated: 2024.09.16)* ***(Requested)***
-        - meshcentral: v1.1.30  *(Updated: 2024.09.16)*
-        - minio: v2024.09.22 *(Updated: 2024.09.25)*
+        - meshcentral: v1.1.32  *(Updated: 2024.10.03)*
+        - minio: v2024.10.02 *(Updated: 2024.10.03)*
 		- nzbget: v24.3 *(Updated: 2024.09.17)* ***(Requested)***
-		- ollama: v0.3.12 *(Updated: 2024.09.25)* ***(Requested)***
+		- ollama: v0.3.13 ***(Updated: 2024.10.13)*** ***(Requested)***
 		- paperless-ngx: v2.12.1  *(Updated: 2024.09.16)* ***(Requested)***
-		- plex: v1.41.0.8992  *(Updated: 2024.09.16)* ***(Requested)***
-        - prowlarr: v1.24.1.4740 *(Updated: 2024.09.24)*
+		- plex: v1.41.0.8994  *(Updated: 2024.10.03)* ***(Requested)***
+        - prowlarr: v1.25.2.4794 ***(Updated: 2024.10.13)***
 		- qbitmanage: v4.1.9 *(Updated: 2024.09.18)* ***(Requested)***
-		- qbittorrent: v4.6.7 *(Updated: 2024.09.18)*
-        - radarr: v5.11.0.9244 *(Updated: 2024.09.25)*
-        - Readarr: v0.3.32.2587 *(Updated: 2024.07.24)*
+		- qbittorrent: v5.0.0 *(Updated: 2024.10.03)*
+        - radarr: v5.12.2.9335 ***(Updated: 2024.10.13)***
+        - readarr: v0.4.0.2634 *(Updated: 2024.10.06)*
 		- recyclarr: v7.2.4  *(Updated: 2024.09.16)*
 		- satisfactory: v1.8.6 *(Updated: 2024.09.24)* ***(Requested)***
 		- sabnzbd: v4.3.3 *(Updated: 2024.08.26)* ***(Requested)***
@@ -72,15 +73,48 @@ Now you should be able to update your applications again.
         - sonarr: v4.0.9.2244 *(Updated: 2024.08.26)*
         - stun-turn-server: latest *(Updated: 2024.09.18)*
 		- syncthing: v1.27.12 *(Updated: 2024.09.16)* ***(Requested)***
-		- tautulli: v2.14.5 *(Updated: 2024.09.24)* ***(Requested)***
+		- tautulli: v2.14.6 ***(Updated: 2024.10.13)*** ***(Requested)***
         - unpackerr: v0.14.5 *(Updated: 2024.08.05)*
 
 
 - ### Changelog:
+	- 2024.10.13:
+		- audiobookshelf: v2.15.0
+		- changedetection.io: v0.47.03
+		- local-ai: v2.22.0
+		- ollama: v0.3.13
+		- prowlarr: v1.25.2.4794
+		- radarr: v5.12.2.9335
+		- tautulli: v2.14.6
+
+	- 2024.10.10:
+		- lidarr: v2.6.4.4402
+
+	- 2024.10.08:
+		- audiobookshelf: v2.14.0
+		- authelia: v4.38.16
+		- autobrr: v1.47.1
+		- prowlarr: v1.25.1.4770
+
+	- 2024.10.06:
+		- lidarr: v2.5.3.4341
+		- prowlarr: v1.25.0.4759
+		- readarr: v0.4.0.2634
+
 	- 2024.10.03
-		- codeproject-ai-server: v2.6.5
-		- local-ai: v2.21.1
+		- authelia: v4.38.15
+		- bazarr: v1.4.5
 		- code-server: v4.93.1
+		- codeproject-ai-server: v2.6.5
+		- crafty-4: v4.4.4
+		- immich: v1.117.0
+		- local-ai: v2.21.1
+		- meshcentral: v1.1.32
+		- minio: v2024.10.02
+		- plex: v1.41.0.8994
+		- prowlarr: v1.24.3.4754
+		- qbittorrent: v5.0.0
+		- traefik: v3.1.5
 
 	- 2024.09.25:
 		- minio: v2024.09.22
